@@ -4,13 +4,13 @@
 
 ## Project screenshots
 
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshot.PNG)
 
 Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo not available yet]()
+[Live Demo](https://hardcore-jones-397d6a.netlify.app)
 
 ## Built With
 
