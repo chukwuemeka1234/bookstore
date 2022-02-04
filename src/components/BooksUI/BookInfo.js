@@ -1,12 +1,12 @@
 import { useDispatch } from 'react-redux';
-import { bookRemoved } from '../../redux/books/books';
+import { deleteBook } from '../../redux/books/api';
 
 const BookInfo = ((props) => {
   const data = props;
   const dispatch = useDispatch();
 
   const deleteBookFromStore = (e) => {
-    dispatch(bookRemoved(e.target.id));
+    dispatch(deleteBook(e.target.id));
   };
 
   return (
@@ -17,7 +17,7 @@ const BookInfo = ((props) => {
     >
       <p style={{ margin: '0' }}>{data.title}</p>
       <button
-        className="btn"
+        className="button"
         type="button"
         onClick={deleteBookFromStore}
         id={data.idx}
