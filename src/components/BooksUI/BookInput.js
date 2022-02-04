@@ -40,9 +40,10 @@ const BookInput = (() => {
   };
 
   return (
-    <form onSubmit={submitBookToStore}>
-      <input name="title" type="text" placeholder="Enter book name" value={newTitle.title} onChange={titleChange} />
-      <select name="category" onChange={categoryChange} value={newCategory.category} id="myCategory" placeholder="Category">
+    <form onSubmit={submitBookToStore} className="inputForm">
+      <h2 className="Title">ADD NEW BOOK</h2>
+      <input name="title" type="text" placeholder="Enter book name" value={newTitle.title} onChange={titleChange} className="Lesson-Pane2 titling" />
+      <select name="category" onChange={categoryChange} value={newCategory.category} id="myCategory" placeholder="Category" className="Lesson-Pane2">
         <option value="">Category</option>
         <option value="Action">Action</option>
         <option value="Horror">Horror</option>
@@ -50,7 +51,7 @@ const BookInput = (() => {
         <option value="Economy">Economy</option>
         <option value="Comedy">Comedy</option>
       </select>
-      <button type="submit">Add Book</button>
+      <button type="submit" className="submit">Add Book</button>
     </form>
   );
 });
