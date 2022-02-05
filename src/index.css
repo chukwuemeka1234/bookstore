@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #d3d3d3;
+  background-color: #e7e3e3;
 }
 
 ul {
@@ -49,7 +49,6 @@ a {
   display: flex;
   flex-direction: row;
   width: 60vw;
-  height: 15vh;
   margin: 1.313rem 3.25rem 0;
   padding: 0.8rem 9.188rem 1.625rem 1.688rem;
   padding-bottom: 2rem;
@@ -57,19 +56,17 @@ a {
   border: solid 1px var(--white-two);
   background-color: white;
   margin-left: 10%;
-  margin-right: 10%;
 }
 
 .inputForm {
-  width: 70vw;
+  width: 72vw;
   height: 4.813rem;
   margin: 1.313rem 4.85rem 0;
-  padding: 0 9.188rem 1.625rem 1.688rem;
-  padding-bottom: 2rem;
-  border-radius: 4px;
-  border: solid 1px var(--white-two);
-  background-color: whitesmoke;
-  margin-left: 8%;
+  padding: 0;
+  padding-bottom: 3rem;
+  border-top: solid 1px #b4b0b0;
+  background-color: #e7e3e3;
+  margin-left: 13%;
 }
 
 .Title {
@@ -89,9 +86,9 @@ a {
   width: 15.813rem;
   height: 2.813rem;
   border-radius: 4px;
-  border: solid 1px var(--white-two);
+  border: solid 1px #888;
   background-color: #fff;
-  margin-right: 1rem;
+  margin-right: 2.2rem;
   padding-left: 0.5rem;
 }
 
@@ -118,7 +115,7 @@ a {
 }
 
 .remove {
-  width: 3.375rem;
+  width: 4.375rem;
   height: 1.188rem;
   font-family: 'RobotoSlab', sans-serif;
   font-size: 0.875rem;
@@ -130,17 +127,21 @@ a {
   color: #4386bf;
   border: none;
   cursor: pointer;
-  border-right: solid 1px #121212;
+  border-right: solid 1px #d6d3d3;
   background-color: white;
 }
 
 .comment {
-  margin-left: 0;
-  width: 4.5rem;
+  padding-right: 3rem;
+  width: 5rem;
 }
 
 .edit {
-  width: 2.3rem;
+  padding-left: 1rem;
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+  background-color: white;
 }
 
 .author {
@@ -191,6 +192,7 @@ a {
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
   padding-top: 1rem;
+  padding-left: 7%;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
@@ -204,8 +206,6 @@ a {
 
 .Booklist {
   width: 99%;
-  height: 20rem;
-  overflow: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -223,6 +223,7 @@ a {
   height: 1rem;
   text-align: end;
   margin-top: 2rem;
+  margin-right: 10%;
 }
 
 .progressAnalysis {
@@ -262,6 +263,8 @@ a {
   display: flex;
   flex-direction: column;
   margin-left: 4rem;
+  border-left: 1px solid #eee9e9;
+  padding-left: 1rem;
 }
 
 .heading2 {
@@ -308,4 +311,28 @@ a {
   margin: 0 0 0 41.5rem;
   padding: 0.875rem;
   border: solid 1px var(--white-two);
+}
+
+@media (min-width: 1442px) {
+  .header {
+    margin-left: 1%;
+  }
+
+  .holder {
+    margin-left: 14rem;
+  }
+
+  .inputForm {
+    width: 68%;
+    margin-left: 15rem;
+  }
+
+  .Lesson-Pane2 {
+    margin-right: 10rem;
+    padding-right: 4rem;
+  }
+
+  .updateOne {
+    padding-left: 4rem;
+  }
 }
